@@ -2,7 +2,7 @@ import moment from 'moment/moment';
 import { useState } from 'react';
 
 export const HelloMsg = () => {
-	const before7PM = moment(new Date()).isBefore('18:00:00');
+	const goodMorning = new Date().getHours() < 18;
 
-	return <div className="text-[32px]">{before7PM ? <h1>🦞 Bom dia man</h1> : <h1>🦞 Boa noite man</h1>}</div>;
+	return <h1 className="text-[32px]">{goodMorning ? '🦞 Bom dia man' : '🦞 Boa noite man'}</h1>;
 };
