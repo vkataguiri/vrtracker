@@ -1,4 +1,3 @@
-import moment from 'moment/moment';
 import { useState } from 'react';
 
 export const HelloMsg = () => {
